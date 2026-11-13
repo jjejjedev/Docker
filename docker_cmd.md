@@ -56,4 +56,5 @@ docker run -d --name my-pg -e POSTGRES_PASSWORD=admin1234 -p 5432:5432 -v pgdata
 
 ```sh
 docker exec -it my-pg psql -U postgres -d kant_shop -c "SELECT * FROM product"
+docker exec -it kant-pg psql -U postgres -d kant_shop -c "SELECT * FROM product"
 ```
